@@ -12,7 +12,7 @@
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h1 class="text-center mb-4">Générateur de cartes</h1>
+            <h1 class="text-center mb-4">Liste de courses</h1>
         </div>
         <div class="card shadow-sm">
             <div class="card-body">
@@ -28,6 +28,17 @@
                                placeholder="Achats à effectuer"
                                required>
                     </div>
+                    <div class="mb-3 fs-4">
+                        <label for="quantite" class="form-label">Quantité</label>
+                        <input type="number"
+                               class="form-control"
+                               id="quantite"
+                               placeholder="Nombre d'articles"
+                               value="1"
+                               min="1"
+                               required>
+                    </div>
+
                     <button type="button" class="btn btn-primary w-100 fw-bold" id="ajouter-btn">
                         Ajouter à la liste
                     </button>
@@ -38,7 +49,7 @@
 
         <!-- liste -->
         <div class="liste mt-4">
-            <div class="card shadow">
+            <div class="card shadow" id="enfant2">
                 <div class="card-body d-flex flex-column align-items-center text-center" style="min-height: 400px"  id="liste">
 
                 </div>
